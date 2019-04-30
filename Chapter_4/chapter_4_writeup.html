@@ -1,0 +1,39 @@
+<p style="font-weight: bold">Recap from the Last Chapter (Ch 3)<p>
+In the previous chapter we did 3 machine-learning problems: binary classification, multiclass classification, and scalar regression – which are instances of supervised learning. The goal of supervised learning is to learn the relationship between training inputs and training targets. Other variants include: Sequence generation, Syntax tree prediction, Object detection and Image segmentation. 
+
+<p style="font-weight: bold">Key Components of Chapter 4</p>
+
+<p style="font-weight: bold">Reinforcement Learning</p>
+An agent receives information about its environment and learns to choose actions that will maximize some reward. 
+
+<p style="font-weight: bold">Evaluating machine-learning models</p>
+Split available data into 3 sets: training, validation and test. Developing a model involves tuning, using the performance of the model on the validation data as a feedback signal. Tuning based on the model’s performance on the validation set can result in overfitting. 
+
+<p style="font-weight: bold">Data preprocessing</p>
+How do you prepare input data and targets before feeding them into a neural network? Through data preprocessing, which makes raw data more amenable to neural network. 
+<ul>
+  <li>Vectorization - Data must first be turned into tensors.</li>
+  <li>Normalization – Data converted into small values (typically 0-1 range), features should take values in roughly the same range.</li>
+</ul>
+
+<p style="font-weight: bold">Feature Engineering</p>
+The process of using your own knowledge about the data and about the machine-learning algorithm at hand. This involves making the algorithm work better by applying hardcoded transformations to the data before it is fed into the neural network. 
+
+<p style="font-weight: bold">Overfitting and Underfitting</p>
+Overfitting occurs when the performance of the model begins to degrade. 
+How to prevent overfitting in neural networks:
+<ul>
+    <li>Get more training data</li>
+    <li>Reduce the capacity of the network</li>
+    <li>Adding weight regularization</li>
+      <ul>
+        <li>Put constraints on the complexity of a network by forcing its weights to take only small values, making the distribution of weight values more regular</li>
+      </ul>
+    <li>Adding Dropout</li>
+      <ul>
+          <li>Applied to a layer, consists of randomly dropping a number of features of the layer during training</li>
+      </ul>
+</ul>
+Optimization refers to the process of adjusting a model to get the best performance possible on the training data.
+Generalization refers to how well the trained model performs on data it has never seen before.
+Underfitting occurs when there is still progress for the model to make. 
